@@ -7,6 +7,7 @@
     <version>1.0-SNAPSHOT</version>
   </parent>
 
+    <groupId>com.zorxon</groupId>
     <artifactId>acs-BE-web</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
@@ -25,7 +26,7 @@
             <version>7.0</version>
             <scope>provided</scope>
         </dependency>
-        <dependency>
+		<dependency>
             <groupId>com.zorxon</groupId>
             <artifactId>acs-BE-ejb</artifactId>
             <version>1.0-SNAPSHOT</version>

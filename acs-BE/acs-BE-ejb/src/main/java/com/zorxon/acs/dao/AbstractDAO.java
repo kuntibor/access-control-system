@@ -4,6 +4,7 @@ import com.zorxon.acs.api.EntityDAO;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.transaction.Transactional;
 
 public abstract class AbstractDAO<E> implements EntityDAO<E> {
 
@@ -23,12 +24,12 @@ public abstract class AbstractDAO<E> implements EntityDAO<E> {
 
     @Override
     public E merge(E entity) {
-        return null;
+        return  getEntityManager().merge(entity);
     }
 
     @Override
     public void remove(Long entityId) {
-
+        getEntityManager().remove(find(entityId));
     }
 
     protected EntityManager getEntityManager() {

@@ -7,6 +7,7 @@
     <version>1.0-SNAPSHOT</version>
   </parent>
 
+    <groupId>com.zorxon</groupId>
     <artifactId>acs-BE-ear</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>ear</packaging>

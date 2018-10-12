@@ -5,14 +5,13 @@
  */
 package com.zorxon.acs.config;
 
-import java.util.Set;
 import javax.ws.rs.core.Application;
+import java.util.Set;
 
 /**
- *
  * @author teiep
  */
-@javax.ws.rs.ApplicationPath("acs")
+@javax.ws.rs.ApplicationPath("")
 public class ApplicationConfig extends Application {
 
     @Override
@@ -30,6 +29,8 @@ public class ApplicationConfig extends Application {
      */
     private void addRestResourceClasses(Set<Class<?>> resources) {
         resources.add(com.zorxon.acs.resource.MemberResource.class);
+        resources.add(com.zorxon.acs.resource.UserResource.class);
+        resources.add(com.zorxon.acs.resource.AccessCardResource.class);
     }
-    
+
 }

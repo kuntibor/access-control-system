@@ -8,7 +8,7 @@ import javax.inject.Inject;
 import javax.ws.rs.Path;
 
 @Path("/members")
-public class MemberResource extends AbstractResource<Member>{
+public class MemberResource extends AbstractResource<Member> {
 
     @Inject
     private MemberService memberService;
